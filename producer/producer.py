@@ -11,7 +11,7 @@ for e in range(1000):
     data = {'number' : e}
     resp = producer.send('test', value=data)
     if resp:
-        print('Message sendt successfully')
+        print('Message sent successfully')
     else:
         print('Something wnt wrong')
     sleep(5)            
